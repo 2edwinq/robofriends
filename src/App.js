@@ -10,10 +10,10 @@ class App extends Component {
       robots: robots,
       searchfield: ''
     }
+  }
 
-    const onSearchChange(event) {
-      this.setState({ serchfield: event.target.value });
-    }
+  onSearchChange = (event) => {
+    this.setState({ searchfield: event.target.value });
   }
 
   render() {
